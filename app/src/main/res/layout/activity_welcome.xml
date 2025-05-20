@@ -1,0 +1,68 @@
+<!-- res/layout/activity_welcome.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="#FFFFFF">
+
+    <!-- Logo at top -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:contentDescription="Logo" />
+
+    <!-- Welcome message -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Préparez-vous à un festin visuel et gustatif avec notre menu interactif !"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp" />
+
+    <!-- Main image -->
+    <ImageView
+        android:id="@+id/welcomeImage"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pizza"
+        android:contentDescription="Welcome Image" />
+
+    <!-- Login with Google text button -->
+    <TextView
+        android:id="@+id/loginWithGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login with Google"
+        android:layout_marginTop="24dp"
+        android:textSize="16sp" />
+
+    <!-- Login button -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="se connecter"
+        android:backgroundTint="#f36117"
+        android:layout_marginTop="16dp" />
+
+    <!-- Sign up text button -->
+    <TextView
+        android:id="@+id/signupText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="#f36117"
+        android:layout_marginTop="12dp"
+        android:textSize="16sp" />
+
+</LinearLayout>
